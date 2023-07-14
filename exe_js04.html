@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 04</title>
+</head>
+<body>
+    <script>
+    var idade = parseInt(prompt("Digite a idade da pessoa:"));
+
+    if (idade <= 16) {
+        alert("Não está apto a votar");
+    }else if (idade === 16 || idade === 17 || idade >= 70){
+        alert("Não é obrigatório votar");
+    }else if (idade >= 18 || idade <= 69) {
+        alert("Obrigado a votar");
+    }else {
+        alert("Idade inválida");
+    }
+
+    </script>
+</body>
+</html>

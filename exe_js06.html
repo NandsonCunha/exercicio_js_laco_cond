@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+<body>
+    <script>
+    const limite = parseInt(prompt("Digite um número:"));
+
+    let fibonacci = [0, 1];
+
+    while (fibonacci[fibonacci.length - 1] < limite) {
+    const proximoTermo = fibonacci[fibonacci.length - 1] + fibonacci[fibonacci.length - 2];
+    fibonacci.push(proximoTermo);
+    }
+
+    alert("Sequência de Fibonacci até", limite + ":");
+    for (let i = 0; i < fibonacci.length; i++) {
+        alert(fibonacci[i]);
+    }
+    
+        
+    </script>
+</body>
+</html>

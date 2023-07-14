@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const numeros = [];
+
+while (true) {
+  const numero = parseFloat(prompt("Digite um número (digite 0 para parar):"));
+
+  if (numero === 0) {
+    break;
+  }
+
+  numeros.push(numero);
+}
+
+if (numeros.length === 0) {
+  alert("Nenhum número foi digitado.");
+} else {
+  const maior = Math.max(...numeros);
+  const menor = Math.min(...numeros);
+
+  alert("O maior número é: " + maior);
+  alert("O menor número é: " + menor);
+}
+
+    </script>
+</body>
+</html>
